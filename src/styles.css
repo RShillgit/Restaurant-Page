@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Lobster;
+    src: url(./modules/fonts/Lobster/Lobster-Regular.ttf);
+}
+html {
+    font-family: Lobster;
+    color: #231709;
+}
+body {
+    background-color: #795C34;
+}
+#content {
+    position: relative;
+    min-height: 100vh;
+}
+
 .header, .nav, .nav ul, .nav ul li, .about {
     display: flex;
     justify-content: center;
@@ -8,7 +24,7 @@
 }
 
 .about, .menu, .contact {
-    min-height: 60vh;
+    max-height: 80vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -28,9 +44,10 @@
     padding: 10px;
     font-size: 20px;
     width: 20vw;
+    border-radius: 10px;
 }
 .nav ul li:hover {
-    background-color: lightgray;
+    background-color: #9A7B4F;
     cursor: pointer;
 }
 
@@ -48,20 +65,25 @@
 .menu {
     padding: 10px;
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 40vh 40vh;
+    justify-content: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 35vh 35vh;
     gap: 10px;
 }
 .menu-item {
     border: 1px solid black;
+    border-radius: 10px;
 }
 .menu-item > img {
+    border-radius: 10px;
     width: 100%;
     height: 80%;
+    border-bottom: 1px solid black;
 }
 .menu-item p {
     font-size: 18px;
     text-align: center;
+    height: auto;
 }
 
 .contact {
@@ -69,4 +91,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a > img:hover {
+    transform: scale(1.2);
 }

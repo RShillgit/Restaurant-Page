@@ -8,9 +8,9 @@ import displayContact from './modules/contact';
 
 
 function navigation(option) {
-    // Set all option's background colors to white
+    // Set all option's background colors back to normal
     const allNavOptions = document.querySelectorAll('.option');
-    allNavOptions.forEach(navOption => {return navOption.style.backgroundColor = 'white'});
+    allNavOptions.forEach(navOption => {return navOption.style.backgroundColor = '#795C34'});
 
     // Page elements
     const aboutPage = document.querySelector('.about');
@@ -22,7 +22,7 @@ function navigation(option) {
     if (menuPage !== null) menuPage.style.display = 'none';
     if (contactPage !== null) contactPage.style.display = 'none';
 
-    option.style.backgroundColor = 'lightgray';
+    option.style.backgroundColor = '#9A7B4F';
     if (option.innerHTML === 'About') {
         // render about tab
         return displayAbout(aboutPage);
