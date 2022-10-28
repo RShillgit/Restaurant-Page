@@ -1,0 +1,43 @@
+.header, .nav, .nav ul, .nav ul li, .about {
+    display: flex;
+    justify-content: center;
+}
+
+.header, .nav {
+    border-bottom: 1px solid black;
+}
+
+.about, .menu, .contact {
+    min-height: 60vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.header {
+    font-size: 40px;
+}
+
+.nav ul {
+    gap: 20px;
+}
+.nav ul li {
+    padding: 10px;
+    font-size: 20px;
+    width: 20vw;
+}
+.nav ul li:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.about > p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    text-align: center;
+}
